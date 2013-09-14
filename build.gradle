@@ -1,0 +1,8 @@
+
+apply plugin: 'java'
+
+
+task run(type:JavaExec, dependsOn: classes) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'com.logicalpractice.finalizer.WorkoutMain'
+}
